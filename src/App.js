@@ -6,7 +6,7 @@ import TicTacToe from "./TicTacToe/TicTacToe";
 export default function App() {
     return (
         <Router>
-            <div>
+            <div className="container bg-secondary mt-4">
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
