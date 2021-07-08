@@ -15,7 +15,6 @@ export default function App() {
                         <Link to="/tictactoe">TicTacToe</Link>
                     </li>
                 </ul>
-
                 <Switch>
                     <Route path="/tictactoe">
                         <TicTacToe />
