@@ -18,7 +18,7 @@ export default class TicTacToe extends Component {
     render() {
         return (
             <div className="container">
-                <h1 className="text-center">Tic Tac Toe</h1>
+                <h1 className="text-center text-success">Tic Tac Toe</h1>
             </div>
         );
     }
