@@ -2,8 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import TicTacToe from "./TicTacToe/TicTacToe";
+import styles from "./TicTacToe/styles.module.css";
 
 export default function App() {
+
     return (
         <Router>
             <div>
@@ -29,5 +31,5 @@ export default function App() {
 }
 
 function Home() {
-    return <h2>Home</h2>;
+    return <h2 className={styles.header}>Home</h2>;
 }
