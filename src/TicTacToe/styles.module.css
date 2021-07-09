@@ -1,3 +1,9 @@
 .header {
     color: #7700ff;
+    margin: 30px;
+    font-size: 100px;
+}
+.link {
+    color:aquamarine;
+    margin: 40px;
 }
