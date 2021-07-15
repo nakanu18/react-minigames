@@ -5,4 +5,8 @@ module.exports = {
     singleQuote: false,
     tabWidth: 4,
     trailingComma: "all",
+    error:
+    {
+    endOfLine: 'auto',
+    },
 };

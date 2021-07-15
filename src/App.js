@@ -5,7 +5,6 @@ import TicTacToe from "./TicTacToe/TicTacToe";
 import styles from "./TicTacToe/styles.module.css";
 
 export default function App() {
-
     return (
         <Router>
             <div>
