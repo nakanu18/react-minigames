@@ -12,9 +12,9 @@ export default class TicTacToe extends Component {
                 ["-", "-", "-"],
             ],
         };
-    onPress = buttonId => {
-        console.log(hello);
     }
+    onPress = buttonId => {
+        console.log("hello");
     }
 
     render() {
