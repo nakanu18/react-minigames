@@ -13,7 +13,7 @@ export default class TicTacToe extends Component {
             ],
         };
     }
-    onPress = buttonId => {
+    onClick = buttonId => {
         console.log("Clicked ${buttonId}");
     };
 
@@ -27,21 +27,21 @@ export default class TicTacToe extends Component {
                             <button
                                 className={styles.button}
                                 onPress={() => {
-                                    this.onPress("button 0");
+                                    this.onClick("button 0");
                                 }}>
                                 {this.state.board[0][0]}
                             </button>
                             <button
                                 className={styles.button}
                                 onPress={() => {
-                                    this.onPress("button 1");
+                                    this.onClick("button 1");
                                 }}>
                                 {this.state.board[0][1]}
                             </button>
                             <button
                                 className={styles.button}
                                 onPress={() => {
-                                    this.onPress("button 2");
+                                    this.onClick("button 2");
                                 }}>
                                 {this.state.board[0][2]}
                             </button>
@@ -50,21 +50,21 @@ export default class TicTacToe extends Component {
                             <button
                                 className={styles.button}
                                 onPress={() => {
-                                    this.onPress("button 3");
+                                    this.onClick("button 3");
                                 }}>
                                 {this.state.board[1][0]}
                             </button>
                             <button
                                 className={styles.button}
                                 onPress={() => {
-                                    this.onPress("button 4");
+                                    this.onClick("button 4");
                                 }}>
                                 {this.state.board[1][1]}
                             </button>
                             <button
                                 className={styles.button}
                                 onPress={() => {
-                                    this.onPress("button 5");
+                                    this.onClick("button 5");
                                 }}>
                                 {this.state.board[1][2]}
                             </button>
@@ -73,21 +73,21 @@ export default class TicTacToe extends Component {
                             <button
                                 className={styles.button}
                                 onPress={() => {
-                                    this.onPress("button 6");
+                                    this.onClick("button 6");
                                 }}>
                                 {this.state.board[2][0]}
                             </button>
                             <button
                                 className={styles.button}
                                 onPress={() => {
-                                    this.onPress("button 7");
+                                    this.onClick("button 7");
                                 }}>
                                 {this.state.board[2][1]}
                             </button>
                             <button
                                 className={styles.button}
                                 onPress={() => {
-                                    this.onPress("button 8");
+                                    this.onClick("button 8");
                                 }}>
                                 {this.state.board[2][2]}
                             </button>
