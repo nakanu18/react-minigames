@@ -7,9 +7,9 @@ export default class TicTacToe extends Component {
         super(props);
         this.state = {
             board: [
-                ["-", "-", "-"],
-                ["-", "-", "-"],
-                ["-", "-", "-"],
+                ["a", "b", "c"],
+                ["d", "e", "f"],
+                ["g", "h", "i"],
             ],
         };
     }
