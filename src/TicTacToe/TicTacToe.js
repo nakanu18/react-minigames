@@ -14,7 +14,7 @@ export default class TicTacToe extends Component {
         };
     }
     onClick = buttonId => {
-        console.log("Clicked ${buttonId}");
+        console.log("Clicked" + buttonId);
     };
 
     render() {
