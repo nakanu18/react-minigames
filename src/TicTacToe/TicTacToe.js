@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import styles from "./styles.module.css";
+import Tile from "./TicTacToe/Tile";
 
 export default class TicTacToe extends Component {
     constructor(props) {
@@ -13,9 +14,9 @@ export default class TicTacToe extends Component {
             ],
         };
     }
-    onClick = buttonId => {
-        console.log("Clicked" + buttonId);
-    };
+    // onClick = buttonId => {
+    //     console.log("Clicked" + buttonId);
+    // };
 
     render() {
         return (
@@ -23,7 +24,8 @@ export default class TicTacToe extends Component {
                 <div>
                     <h1 className={styles.header}>Tic Tac Toe</h1>
                     <div className={styles.box}>
-                        <div>
+                        <div className={Tile.Component}></div>
+                        {/* <div>
                             <button
                                 className={styles.button}
                                 onClick={() => {
@@ -91,7 +93,7 @@ export default class TicTacToe extends Component {
                                 }}>
                                 {this.state.board[2][2]}
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </>
