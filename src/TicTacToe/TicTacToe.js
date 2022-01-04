@@ -24,7 +24,15 @@ export default class TicTacToe extends Component {
                 <div>
                     <h1 className={styles.header}>Tic Tac Toe</h1>
                     <div className={styles.box}>
-                        <div className={Tile.Component}></div>
+                        <Tile onClick={onClick} value={"a"} />
+                        <Tile onClick={onClick} value={"b"} />
+                        <Tile onClick={onClick} value={"c"} />
+                        <Tile onClick={onClick} value={"d"} />
+                        <Tile onClick={onClick} value={"e"} />
+                        <Tile onClick={onClick} value={"f"} />
+                        <Tile onClick={onClick} value={"g"} />
+                        <Tile onClick={onClick} value={"h"} />
+                        <Tile onClick={onClick} value={"i"} />
                         {/* <div>
                             <button
                                 className={styles.button}
