@@ -14,9 +14,9 @@ export default class TicTacToe extends Component {
             ],
         };
     }
-    // onClick = buttonId => {
-    //     console.log("Clicked" + buttonId);
-    // };
+    onClick = buttonId => {
+        console.log("Clicked" + buttonId);
+    };
 
     render() {
         return (
@@ -24,84 +24,15 @@ export default class TicTacToe extends Component {
                 <div>
                     <h1 className={styles.header}>Tic Tac Toe</h1>
                     <div className={styles.box}>
-                        <Tile onClick={onClick} value={"a"} />
-                        <Tile onClick={onClick} value={"b"} />
-                        <Tile onClick={onClick} value={"c"} />
-                        <Tile onClick={onClick} value={"d"} />
-                        <Tile onClick={onClick} value={"e"} />
-                        <Tile onClick={onClick} value={"f"} />
-                        <Tile onClick={onClick} value={"g"} />
-                        <Tile onClick={onClick} value={"h"} />
-                        <Tile onClick={onClick} value={"i"} />
-                        {/* <div>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 0");
-                                }}>
-                                {this.state.board[0][0]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 1");
-                                }}>
-                                {this.state.board[0][1]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 2");
-                                }}>
-                                {this.state.board[0][2]}
-                            </button>
-                        </div>
-                        <div>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 3");
-                                }}>
-                                {this.state.board[1][0]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 4");
-                                }}>
-                                {this.state.board[1][1]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 5");
-                                }}>
-                                {this.state.board[1][2]}
-                            </button>
-                        </div>
-                        <div>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 6");
-                                }}>
-                                {this.state.board[2][0]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 7");
-                                }}>
-                                {this.state.board[2][1]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 8");
-                                }}>
-                                {this.state.board[2][2]}
-                            </button>
-                        </div> */}
+                        <Tile onClick={"a"} value={this.state.board[0][0]} />
+                        <Tile onClick={"b"} value={this.state.board[0][1]} />
+                        <Tile onClick={"c"} value={this.state.board[0][2]} />
+                        <Tile onClick={"d"} value={this.state.board[1][0]} />
+                        <Tile onClick={"e"} value={this.state.board[1][1]} />
+                        <Tile onClick={"f"} value={this.state.board[1][2]} />
+                        <Tile onClick={"g"} value={this.state.board[2][0]} />
+                        <Tile onClick={"h"} value={this.state.board[2][1]} />
+                        <Tile onClick={"i"} value={this.state.board[2][2]} />
                     </div>
                 </div>
             </>
