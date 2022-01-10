@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import styles from "./styles.module.css";
 
 export default class Tile extends Component {
-    
     render() {
         return (
             <>
@@ -11,10 +10,10 @@ export default class Tile extends Component {
                     <button
                         className={styles.button}
                         onClick={() => {
-                            this.props.onClick;
-                        }}>
-                    </button>
-                    
+                            if (this.props.onClick) {
+                                this.props.onClick();
+                            }
+                        }}></button>
                 </div>
             </>
         );
