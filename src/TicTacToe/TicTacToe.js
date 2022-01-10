@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import styles from "./styles.module.css";
+import Tile from "./TicTacToe/Tile";
 
 export default class TicTacToe extends Component {
     constructor(props) {
@@ -23,75 +24,39 @@ export default class TicTacToe extends Component {
                 <div>
                     <h1 className={styles.header}>Tic Tac Toe</h1>
                     <div className={styles.box}>
-                        <div>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 0");
-                                }}>
-                                {this.state.board[0][0]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 1");
-                                }}>
-                                {this.state.board[0][1]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 2");
-                                }}>
-                                {this.state.board[0][2]}
-                            </button>
-                        </div>
-                        <div>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 3");
-                                }}>
-                                {this.state.board[1][0]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 4");
-                                }}>
-                                {this.state.board[1][1]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 5");
-                                }}>
-                                {this.state.board[1][2]}
-                            </button>
-                        </div>
-                        <div>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 6");
-                                }}>
-                                {this.state.board[2][0]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 7");
-                                }}>
-                                {this.state.board[2][1]}
-                            </button>
-                            <button
-                                className={styles.button}
-                                onClick={() => {
-                                    this.onClick("button 8");
-                                }}>
-                                {this.state.board[2][2]}
-                            </button>
-                        </div>
+                        <Tile onClick={() => {
+                            this.onClick("button 0");
+                        }}
+                            value={this.state.board[0][0]} />
+                        <Tile onClick={() => {
+                            this.onClick("button 1");
+                        }}
+                            value={this.state.board[0][1]} />
+                        <Tile onClick={() => {
+                            this.onClick("button 2");
+                        }}
+                            value={this.state.board[0][2]} />
+                        <Tile onClick={() => {
+                            this.onClick("button 3");
+                        }}
+                            value={this.state.board[1][0]} />
+                        <Tile onClick={() => {
+                            this.onClick("button 4");
+                        }}
+                            value={this.state.board[1][1]} />
+                        <Tile onClick={() => {
+                            this.onClick("button 5");
+                        }}
+                            value={this.state.board[1][2]} />
+                        <Tile onClick={() => {
+                            this.onClick("button 6");
+                        }} value={this.state.board[2][0]} />
+                        <Tile onClick={() => {
+                            this.onClick("button 7");
+                        }} value={this.state.board[2][1]} />
+                        <Tile onClick={() => {
+                            this.onClick("button 8");
+                        }} value={this.state.board[2][2]} />
                     </div>
                 </div>
             </>
