@@ -13,7 +13,9 @@ export default class Tile extends Component {
                             if (this.props.onClick) {
                                 this.props.onClick();
                             }
-                        }}></button>
+                        }}>
+                        {this.props.value}
+                    </button>
                 </div>
             </>
         );
