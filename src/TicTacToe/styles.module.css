@@ -8,9 +8,13 @@
     margin: 40px;
 }
 .box {
-    margin: 50px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    margin: 10px;
 }
 .button {
     margin: 10px;
-    color:lightseagreen
+    color:lightseagreen;
+    border: 1px solid black;
 }
