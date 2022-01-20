@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import styles from "./styles.module.css";
-import Tile from "./TicTacToe/Tile";
+import Tile from "./Tile";
 
 export default class TicTacToe extends Component {
     constructor(props) {

@@ -4,7 +4,7 @@
     font-size: 100px;
 }
 .link {
-    color:aquamarine;
+    color: aquamarine;
     margin: 40px;
 }
 .box {
@@ -15,6 +15,5 @@
 }
 .button {
     margin: 10px;
-    color:lightseagreen;
-    border: 1px solid black;
+    color: lightseagreen;
 }
